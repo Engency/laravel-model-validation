@@ -1,0 +1,44 @@
+{
+  "name": "engency/laravel-model-validation",
+  "description": "Model validation for Laravel projects",
+  "keywords": [
+    "laravel",
+    "model",
+    "validation"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Engency",
+      "homepage": "https://www.engency.com"
+    },
+    {
+      "name": "Frank Kuipers",
+      "email": "frank@engency.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "illuminate/validation": "^7.0|^8.0",
+    "illuminate/database": "^7.0|^8.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Engency\\ModelValidation\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1"
+    }
+  },
+  "scripts": {
+    "check-style": "phpcs -p --standard=psr2 src/",
+    "fix-style": "phpcbf -p --standard=psr2 src/"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
