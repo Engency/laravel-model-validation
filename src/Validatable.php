@@ -40,7 +40,7 @@ trait Validatable
      * @return static
      * @throws ValidationException
      */
-    public static function validateAndCreateNew(array $data, ?string $occasion)
+    public static function validateAndCreateNew(array $data, ?string $occasion = 'default')
     {
         $instance = new static();
 
